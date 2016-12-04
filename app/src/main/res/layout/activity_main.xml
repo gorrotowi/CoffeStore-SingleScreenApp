@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gorrotowi.espressartecoffeshop.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewShop"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/espressarte_store" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewShop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingLeft="72dp"
+        android:text="Espressarte"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textSize="34sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewShop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/web"
+                android:drawablePadding="32dp"
+                android:gravity="center_vertical"
+                android:text="http://www.espressarte.com.mx/"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/gmail"
+                android:drawablePadding="32dp"
+                android:gravity="center_vertical"
+                android:text="absove@gmail.com"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/twitter_box"
+                android:drawablePadding="32dp"
+                android:gravity="center_vertical"
+                android:text="espressartel"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/timelapse"
+                android:drawablePadding="32dp"
+                android:gravity="center_vertical"
+                android:text="8:00 AM - 20:00 PM"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:drawableLeft="@drawable/directions"
+                android:drawablePadding="32dp"
+                android:text="Av. Monterrey 151 col. Roma Norte Cuauhtémoc, Distrito Federal, Mexico"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="top"
+                android:paddingLeft="56dp"
+                android:text="Espressarte es un espacio donde tu paladar puede disfrutar de las delicias que aquí se preparan, de los productos orgánicos y de micro productores mexicanos y de un excelente café recién tostado en cualquier método artesanal de extracción.
+Somos también un espacio abierto a la experimentación, la enseñanza y el aprendizaje.
+Contamos con nuestro salón para cursos y catas donde aprendemos y disfrutamos de las experiencias sensoriales que abren tu mente"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
